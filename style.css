@@ -1,0 +1,108 @@
+/*estilo geral da pagina*/
+body{
+    background-color: #f3e8ff; 
+    font-family: arial, sans-serif;
+     margin: 0;}
+
+/*container principal*/
+.container{
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/*cabecalho*/
+.cabecalho{
+    background-color: #8e44ad;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/*titulos*/
+h2{
+    color: #8e44ad;
+    margin-top: 25px;
+}
+
+/*secoes*/
+.apresentacao, .sites, .gostos{
+    background-color: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+/*imagem da billie*/
+.foto-billie{
+    display: block;
+    width: 350px;
+    max-width: 15px;
+}
+
+/*sites*/
+.sites-imagens{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/*imagens dos sites*/
+.sites-imagens img{
+    width: 60px;
+    height: 60px;
+}
+
+/*tabela*/
+.tabela{
+    margin-top: 20px;
+}
+
+/*rodape*/
+footer{
+    text-align: center;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+/*responsividade*/
+@media(max-width: 768px){
+    .container{
+        width: 90px;
+    }
+
+    .cabecalho{
+        padding: 20px;
+    }
+    .foto-billie{
+        width: 80px;
+    }
+    .sites-imagens{
+        gap: 15px;
+    }
+}
+
+/*celulares*/
+@media(max-width: 480px){
+    .container{
+        width: 95px;
+    }
+    .apresentacao, .sites, .gostos{
+        padding: 15px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .sites-imagens{
+        gap: 10px;
+    }
+    .sites-imagens img{
+        width: 50px;
+        height: 50px; 
+    }
+}
